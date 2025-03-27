@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/img_index.html/fav-icon.png" type="image/x-icon">
+    <title>MindSync</title>
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="../imagens/img_index.html/fav-icon.png" alt="logoSite">
+            <p>mind<strong>sync</strong></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Para colaboradores</a></li>
+                <li><a href="#">Para empresas</a></li>
+                <li><a href="#">Para médicos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#" class="entra">Entrar</a></li>
+                <li><a href="#" class="cadastrar">Cadastre-se</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+<!-- FIM DO HEADER -->
+
+<div class="container">
+    <div class="text-content">
+        <h1>Oi, essa é a <span>MindSync</span></h1>
+        <h2>Sua saúde, sua mente, seu tempo. Tudo sincronizado para você.</h2>
+        <p>Aqui, você agenda consultas, acessa exames, recebe suporte psicológico e cuida do seu bem-estar de forma inteligente e sem burocracia.</p>
+        <div class="buttons">
+            <a href="#" class="cadastro">Cadastre-se</a>
+            <a href="#" class="entrar">Entrar</a>
+        </div>
+    </div>
+    <div class="image-content">
+        <img src="../imagens/img_index.html/imagemBanner1.png" alt="Mulher usando celular">
+    </div>
+</div>
+
+<section class="section-container">
+    <h1 class="section-title" style="font-size: 44px;">MindSync,</h1>
+    <h2 class="section-title" style="margin: 2px 0 30px 0;">tecnologia e cuidado que andam juntos.</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="../imagens/img_index.html/iconEstetoscopio.png" alt="Estetoscopio">
+            <h3>Consultas Online 24h</h3>
+            <p>Seu tempo importa e sua saúde vem em primeiro lugar. Com a MindSync, você marca consultas e fala com especialistas a qualquer hora do dia, de onde estiver.</p>
+            <a href="#">Saiba mais  ></a>
+        </div>
+        <div class="card">
+            <img src="../imagens/img_index.html/iconConsulta.png" alt="exames">
+            <h3>Exames Rápidos e Resultados Digitais</h3>
+            <p>Nunca mais perca um exame! Agende seus exames com poucos cliques e acesse os resultados diretamente por aqui.</p>
+            <a href="#">Saiba mais  ></a>
+        </div>
+        <div class="card">
+            <img src="../imagens/img_index.html/iconCerebro.png" alt="Cerebro">
+            <h3>Saúde Mental em Dia</h3>
+            <p>Cuidar da mente é tão importante quanto cuidar do corpo. Através da MindSync, você tem acesso a psicólogos e
+                terapeutas especializados para
+                te ajudar em qualquer momento</p>
+            <a href="#">Saiba mais  ></a>
+        </div>
+        <div class="card">
+            <img src="../imagens/img_index.html/iconmonitoramentoInteligente.png" alt="monitoramentoInteligente">
+            <h3>Monitoramento Inteligente</h3>
+            <p>Nossa tecnologia ajuda você a manter tudo sob controle, com alertas, dicas e recomendações feitas sob medida
+                para o seu bem-estar.</p>
+            <a href="#" >Saiba mais  ></a>
+        </div>
+
+    </div>
+    <div style=" display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <div class="menssagem" style=" display: flex; justify-content: center; align-items: center;">
+        <img src="../imagens/img_index.html/pingo.png" alt="">
+        <p><strong> Acreditamos que a tecnologia pode transformar a forma como você cuida da sua saúde.<br>
+        <br>
+        Nosso compromisso é tornar tudo mais acessível, inteligente e conectado a você!</strong></p>
+    </div>
+    </div>
+</section>
+
+<section class="interactive-section">
+    <div class="tabs">
+        <button class="tab-button active" data-target="pessoas">Pessoas</button>
+        <button class="tab-button" data-target="empresas">Empresas</button>
+    </div>
+    <div class="content pessoas active">
+        <h2>Experiência feita pra <span>colaboradores.</span></h2>
+        <div class="features">
+            <div class="feature-item">🔒 <strong>Simples e seguro</strong> <br> Sou fácil de usar e seus dados são protegidos.</div>
+            <div class="feature-item"><img src="../imagens/img_index.html/iconAgileutil.png" alt="Agil e Util"> <strong>Ágil e útil</strong> <br> Você tem atendimento quando precisa.</div>
+            <div class="feature-item">📄 <strong>Sem papel</strong> <br> Pedidos médicos online, na palma da mão.</div>
+        </div>
+        <div class="image-container">
+            <img src="../imagens/img_index.html/imgTeleConsulta.png" alt="TeleConsulta">
+        </div>
+    </div>
+    <div class="content empresas">
+        <h2>Experiência feita para <span>empresas.</span></h2>
+        <div class="features">
+            <div class="feature-item">📊 <strong>Gestão eficiente</strong> <br> Ferramentas completas para RH e saúde.</div>
+            <div class="feature-item">💼 <strong>Benefícios corporativos</strong> <br> Cuide da saúde dos colaboradores.</div>
+            <div class="feature-item">⚡ <strong>Atendimento rápido</strong> <br> Agendamento e suporte sem complicações.</div>
+        </div>
+        <div class="image-container">
+            <img src="../imagens/img_index.html/imgTeleConsulta.png" alt="TeleConsulta">
+        </div>
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+            
+            button.classList.add('active');
+            document.querySelector(`.${button.dataset.target}`).classList.add('active');
+            
+            const section = document.querySelector('.interactive-section');
+            if (button.dataset.target === 'empresas') {
+                section.style.backgroundColor = '#d9b3ff';
+            } else {
+                section.style.backgroundColor = '#ffffff';
+            }
+        });
+    });
+</script>
+
+<section class="contato-section">
+    <div class="contato-container">
+        <div class="contato-texto">
+            <h2 class="contato-titulo">E aí, ficou com alguma dúvida?</h2>
+            <p class="contato-subtitulo">Entre em contato com o nosso time para receber a ajuda que precisa.</p>
+            <p class="contato-whatsapp">
+                <img src="../imagens/img_index.html/iconWhats.png" alt="Ícone do WhatsApp" class="contato-icone">
+                (11) 4000-0000
+            </p>
+            <p class="contato-faq">Ou acesse nosso <a href="#" class="contato-link">FAQ</a></p>
+            <div class="contato-redes">
+                <img src="../imagens/img_index.html/Vector.png" alt="Facebook">
+                <img src="../imagens/img_index.html/Vector-1.png" alt="Instagram">
+                <img src="../imagens/img_index.html/Vector-2.png" alt="LinkedIn">
+                <img src="../imagens/img_index.html/Vector-3.png" alt="YouTube">
+            </div>
+            <div class="contato-lojas">
+                <img src="../imagens/img_index.html/imgAppStore.png" alt="Baixar no App Store">
+                <img src="../imagens/img_index.html/imgGooglePlay.png" alt="Disponível no Google Play">
+            </div>
+        </div>
+        <div class="contato-imagem">
+            <img src="../imagens/img_index.html/fashionable-young-man-woman-posing-Photoroom 2.png" alt="Imagem de duas pessoas interagindo">
+        </div>
+    </div>
+</section>
+
+<footer class="footer-mindsync">
+    <div class="footer-container">
+        <div class="footer-coluna">
+            <h3 class="footer-titulo">MindSync</h3>
+            <ul class="footer-lista">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-coluna">
+            <h3 class="footer-titulo">Políticas</h3>
+            <ul class="footer-lista">
+                <li><a href="#">Condições de uso do site</a></li>
+                <li><a href="#">Condições Gerais</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-coluna">
+            <h3 class="footer-titulo">Segunda à sexta</h3>
+            <p class="footer-horario">09h às 18h</p>
+        </div>
+
+        <div class="footer-logo">
+            <img src="logo.png" alt="MindSync">
+        </div>
+    </div>
+
+    <div class="footer-linha"></div>
+
+    <div class="footer-base">
+        <div class="footer-contato">
+            <img src="phone-icon.png" alt="Ícone de telefone">
+            (11) 4000-0000
+        </div>
+        <div class="footer-redes">
+            <img src="facebook-icon.png" alt="Facebook">
+            <img src="instagram-icon.png" alt="Instagram">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+            <img src="youtube-icon.png" alt="YouTube">
+        </div>
+    </div>
+    <p class="footer-direitos">MindSync © 2025 - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
