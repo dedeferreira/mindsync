@@ -94,23 +94,30 @@
 </section>
 
 <section class="interactive-section">
+    <h2>Experiência feita pra <span>colaboradores.</span></h2>
+
+
     <div class="tabs">
         <button class="tab-button active" data-target="pessoas">Pessoas</button>
         <button class="tab-button" data-target="empresas">Empresas</button>
     </div>
+    <div>
     <div class="content pessoas active">
-        <h2>Experiência feita pra <span>colaboradores.</span></h2>
+       
         <div class="features">
-            <div class="feature-item">🔒 <strong>Simples e seguro</strong> <br> Sou fácil de usar e seus dados são protegidos.</div>
-            <div class="feature-item"><img src="../imagens/img_index.html/iconAgileutil.png" alt="Agil e Util"> <strong>Ágil e útil</strong> <br> Você tem atendimento quando precisa.</div>
-            <div class="feature-item">📄 <strong>Sem papel</strong> <br> Pedidos médicos online, na palma da mão.</div>
+            <div class="feature-item"><img src="../imagens/img_index.html/IconSimpleseSeguro.png" alt=""> 
+                <strong>Simples e seguro</strong>
+                <p style="margin-left: 55px; margin-top:10px">Sou fácil de usar e seus dados são protegidos.</p>
+            </div>
+            <div class="feature-item"><img src="../imagens/img_index.html/iconAgileutil.png" alt="Agil e Util"> <strong>Ágil e útil</strong> <p style="margin-left: 55px; margin-top:10px">Você tem atendimento quando precisa.</p></div>
+            <div class="feature-item"><img src="../imagens/img_index.html/iconSempapel.png" alt=""><strong>Sem papel</strong> <p style="margin-left: 50px; margin-top:10px">Pedidos médicos online, na palma da mão.</p> </div>
         </div>
         <div class="image-container">
             <img src="../imagens/img_index.html/imgTeleConsulta.png" alt="TeleConsulta">
         </div>
     </div>
+    </div>
     <div class="content empresas">
-        <h2>Experiência feita para <span>empresas.</span></h2>
         <div class="features">
             <div class="feature-item">📊 <strong>Gestão eficiente</strong> <br> Ferramentas completas para RH e saúde.</div>
             <div class="feature-item">💼 <strong>Benefícios corporativos</strong> <br> Cuide da saúde dos colaboradores.</div>
@@ -132,7 +139,7 @@
             
             const section = document.querySelector('.interactive-section');
             if (button.dataset.target === 'empresas') {
-                section.style.backgroundColor = '#d9b3ff';
+                section.style.backgroundColor = '#DDC4FF';
             } else {
                 section.style.backgroundColor = '#ffffff';
             }
@@ -194,25 +201,27 @@
         </div>
 
         <div class="footer-logo">
-            <img src="logo.png" alt="MindSync">
+            <img src="../imagens/img_index.html/logoFooter.png" alt="MindSync">
         </div>
     </div>
 
     <div class="footer-linha"></div>
 
     <div class="footer-base">
+        <p class="footer-direitos">MindSync © 2025 - Todos os direitos reservados.</p>
         <div class="footer-contato">
-            <img src="phone-icon.png" alt="Ícone de telefone">
+            <img src="../imagens/img_index.html/icontelefoneBranco.png" alt="Ícone de telefone">
             (11) 4000-0000
         </div>
         <div class="footer-redes">
-            <img src="facebook-icon.png" alt="Facebook">
-            <img src="instagram-icon.png" alt="Instagram">
-            <img src="linkedin-icon.png" alt="LinkedIn">
-            <img src="youtube-icon.png" alt="YouTube">
+            <img src="../imagens/img_index.html/20451dd110aba205a1d0.svg.png" alt="Facebook">
+            <img src="../imagens/img_index.html/393d9fd6a1a62a73fc92.svg fill.png" alt="Instagram">
+            <img src="../imagens/img_index.html/2fdfad44cacfa7bb078b.svg fill.png" alt="LinkedIn">
+            <img src="../imagens/img_index.html/ecc42ad300704cdafa29.svg fill.png" alt="YouTube">
         </div>
+        
     </div>
-    <p class="footer-direitos">MindSync © 2025 - Todos os direitos reservados.</p>
+    
 </footer>
 
 </body>

@@ -320,21 +320,16 @@ nav ul li a.entra {
 /* FINAL BANNER 2 */
 
 /* BANNER 3 */
-.interactive-section  {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    justify-content: center;
-    background: #ffffff;
-    padding: 20px 20px 0 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.interactive-section {
+    padding: 20px 20px 0 50px;
     transition: background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
 }
+
 .tabs {
     display: flex;
     justify-content: start;
 }
+
 .tab-button {
     padding: 10px 20px;
     margin-right: 10px;
@@ -345,54 +340,74 @@ nav ul li a.entra {
     font-weight: bold;
     border-bottom: 3px solid transparent;
 }
+
 .tab-button.active {
     border-bottom: 3px solid purple;
     color: purple;
 }
+
 .content {
     display: none;
     padding: 20px 0 0 0;
 }
+
 .content.active {
-    display: block;
+    display: flex;  /* Alinha o texto e a imagem lado a lado */
+    /* align-items: center;  /* Centraliza verticalmente */
+    /* justify-content: space-between; /* Distribui espaço entre texto e imagem */
+    /* flex-wrap: wrap; */
 }
+
 .features {
-    margin: 65px;
-    margin-top: -5px;
+    width: 50%; /* Define largura para alinhar ao lado da imagem */
 }
+
 .feature-item {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size:18px;
 }
-.feature-item strong{
-    font-size: 28px;
+.feature-item img{
+    width: 38px;
+    margin-bottom: -25px;
+    margin-right:10px ;
 }
+
+
+.feature-item strong {
+    font-size: 22px;
+    text-align: center;
+}
+
 .image-container {
-    margin-top: 20px;
+    width: 50%; /* Mantém a imagem ao lado do texto */
+    display: flex;
+    justify-content: center;
 }
+
 .image-container img {
-  
-    max-width: 100%;
-    height: 500px;
+    max-width: 400px;
+    height: auto;
     border-radius: 10px;
 }
 
+/* Ajuste para telas menores */
 @media (max-width: 1028px) {
-    .tab-button{
-        margin-top: 60px;
-    }
-    .interactive-section{
+    .content.active {
+        flex-direction: column; /* Empilha os elementos */
         align-items: center;
     }
-   .features{
-    margin: 0px;
-   }
-   .image-container img {
-    max-width: 100%;
-    height: 350px;
-    border-radius: 10px;
+    
+    .features, .image-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: 350px;
+    }
 }
-}
+
 /* FINAL BANNER 3 */
 
 /* BANNER 5 */
@@ -405,7 +420,6 @@ nav ul li a.entra {
 .contato-container {
     display: flex;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -505,7 +519,7 @@ nav ul li a.entra {
 .footer-mindsync {
     background-color: #1A0A28;
     color: #fff;
-    padding: 40px 20px;
+    padding: 25px;
     text-align: left;
 }
 
@@ -536,7 +550,8 @@ nav ul li a.entra {
 }
 
 .footer-lista li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    
 }
 
 .footer-lista a {
@@ -551,18 +566,18 @@ nav ul li a.entra {
 }
 
 .footer-logo img {
-    width: 100px;
+    width: 200px;
 }
 
 .footer-linha {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 20px 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
 }
 
 .footer-base {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -581,8 +596,8 @@ nav ul li a.entra {
 }
 
 .footer-redes img {
-    width: 24px;
-    margin-left: 10px;
+    width: 20px;
+    margin-left: 25px;
     cursor: pointer;
 }
 
@@ -607,9 +622,13 @@ nav ul li a.entra {
     .footer-base {
         flex-direction: column;
         text-align: center;
+        gap:10px
     }
 
     .footer-redes img {
         margin: 5px;
+    }
+    .footer-contato{
+        justify-content: center;
     }
 }
