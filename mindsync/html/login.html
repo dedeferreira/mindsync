@@ -24,46 +24,33 @@
         .container {
             background-color: #72037A;
             max-width: 80%;
-            border-radius: 30px;
+            border-radius: 0 0 30px 30px;
             padding: 20px;
             color: white;
             text-align: center;
             align-items: center;
-            height: 80%;
+            height: 90%;
             margin-top: 0;
         }
-       /* .image-container {
-            position: absolute;
-            top: -60px;
-            left: -30px;
-            width: 120px;
-            height: 120px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        } */
+
          .image-container{
-            display: flex;
-            margin-left: -110px;
+        
     
          }
          .image-container img{
-            height: 300px;
-            margin-top: -20px;
+            height: 80%;
+            margin-top: -50px;
 
          }
         .title {
-            font-size: 25px;
+            font-size: 35px;
             font-weight: bold;
             align-items: center;
-            margin: 100px 10px;
+            margin: 20px;
+            
         }
         .access-box {
-            border: solid 1px white;
+            border: solid 0.5px white;
             color: black;
             border-radius: 30px;
             padding: 20px;
@@ -76,7 +63,6 @@
             width: 48%;
             display: flex;
             height: 90px;
-            flex-direction: column;
             align-items: center;
             padding: 15px;
             border-radius: 30px;
@@ -89,27 +75,55 @@
             transition: 0.3s ease;
         }
         .description {
-            margin: 30px 50px;
+            margin: 30px 30px;
             font-size: 18px;
             font-weight: bold;
+            color:#DDC4FF;
         }
-        @media (max-width: 480px) {
-            .container {
+        @media (max-width: 1028px) {
+            .containerprincipal{
                 width: 100%;
-                border-radius: 0;
-                padding: 15px;
+                height:500px;
+                border-radius: 0  0 30px 30px;
+                
             }
-            .image-container {
-                width: 100px;
-                height: 100px;
-                top: -50px;
-                left: 50%;
-                transform: translateX(-50%);
+            .container {
+                border-radius: 0  0 30px 30px;
+                padding: 10px;
+            }
+            .image-container img{
+                justify-content: center;
+                margin-left: 0px;
+                height: 250px;
+            }
+            .access-box{
+                border: solid 1px white;
+                padding: 0px;
+                margin-left: 15px;
+                margin-top: 0px;
+                margin-right: 15px;  
+            }
+            .access-item{
+                width: 48%;
+                height: 55px;
+                margin: 10px;
             }
             .title {
-                margin-top: 60px;
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            .description{
+                font-size: 14px;
+                color: white;
             }
         }
+        @media (max-width: 500px) {
+            .access-item p {
+                  font-size: 13px;
+            }
+        }
+
+ 
     </style>
 </head>
 <body>
@@ -122,8 +136,14 @@
             </div>
             
             <div class="access-box">
-                <div class="access-item">👤 Meu perfil</div>
-                <div class="access-item">📅 Marcar atendimento</div>
+                <div class="access-item">
+                    <img src="../imagens/image 21.png" alt="perfil">
+                    <p style="margin-left: 10px;">Meu perfil</p>
+                </div>
+                <div class="access-item">
+                    <img src="../imagens/SVG.png" alt="atendimento">
+                    <p style="margin-left: 10px;">Marcar atendimento</p>
+                </div>
             </div>
             <p class="description">Conectamos você a especialistas, exames e monitoramento inteligente, tudo em um só lugar.</p>
         </div>
