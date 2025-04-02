@@ -38,12 +38,12 @@
     
          }
          .image-container img{
-            height: 80%;
+            height: 320px;
             margin-top: -50px;
 
          }
         .title {
-            font-size: 35px;
+            font-size: 26px;
             font-weight: bold;
             align-items: center;
             margin: 20px;
@@ -53,7 +53,7 @@
             border: solid 0.5px white;
             color: black;
             border-radius: 30px;
-            padding: 20px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -62,7 +62,7 @@
         .access-item {
             width: 48%;
             display: flex;
-            height: 90px;
+            height: 70px;
             align-items: center;
             padding: 15px;
             border-radius: 30px;
@@ -115,6 +115,7 @@
             .description{
                 font-size: 14px;
                 color: white;
+                margin-top: 10px;
             }
         }
         @media (max-width: 500px) {
@@ -122,12 +123,20 @@
                   font-size: 13px;
             }
         }
-
- 
+    .login{
+        background-color: red;
+        width: 60%;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+    .tituloLogin{
+        margin-top: -40px;
+    }
     </style>
 </head>
 <body>
-    <body>
+    <main style="display: flex;">
         <div class="containerprincipal">
         <div class="container">
             <div class="image-container">
@@ -147,7 +156,20 @@
             </div>
             <p class="description">Conectamos você a especialistas, exames e monitoramento inteligente, tudo em um só lugar.</p>
         </div>
-    </div>
-    </body>
+        </div>
+            <div class="login">
+                <img src="../imagens/logoSite.png" alt="lodo do site">
+                <div class="tituloLogin">
+                    <h2 style="margin-bottom: 10px;">Acesse sua conta</h2>
+                    <p>Acompanhe seu bem-estar, marque consultas e tenha <br>suporte onde e quando precisar</p>
+                </div>
+                <form class="">
+                    <input type="email" name="Email" id="" required>
+                    <input type="password" name="senha" id="" required>
+                    <button>Acessar</button>
+                </form>
+            <div>
+        </div>
+    </main>
 </body>
 </html>
