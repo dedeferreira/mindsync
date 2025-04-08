@@ -12,6 +12,9 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: fixed;
+    background-color: white;
+    width: 100%;
 }
 header .logo{
     font-size: 25px;
@@ -394,6 +397,10 @@ nav ul li a.entra {
     border-radius: 10px;
 }
 
+.feature-item p{
+    margin-left: 55px;
+}
+
 /* Ajuste para telas menores */
 @media (max-width: 1028px) {
     .content.active {
@@ -402,13 +409,16 @@ nav ul li a.entra {
     }
     
     .features, .image-container {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
     }
     .feature-item img{
-        margin-bottom: 30px;
-        margin-left: 50%;
-        margin-right: 50%;
+        margin-bottom: 25px;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    .feature-item p{
+        margin-left: 0px;
     }
     
     .image-container img {
@@ -649,5 +659,102 @@ nav ul li a.entra {
     }
     .footer-contato{
         justify-content: center;
+    }
+}
+
+/* BANNER 4  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+.conteudo-blog {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+.titulo-blog {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.descricao-blog {
+    color: #666;
+    margin-bottom: 20px;
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+.cartao-blog {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.cartao-blog img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.conteudo-cartao {
+    padding: 15px;
+    text-align: left;
+}
+.categoria {
+    background: #ff9800;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.titulo-cartao {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.autor {
+    font-size: 14px;
+    color: #666;
+}
+.link-saiba-mais {
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-controle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+.btn-esquerda {
+    left: 10px;
+}
+.btn-direita {
+    right: 10px;
+}
+@media (max-width: 768px) {
+    .cartao-blog {
+        flex: 0 0 80%;
     }
 }
