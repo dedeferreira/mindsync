@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/img_index.html/fav-icon.png" type="image/x-icon">
+    <title>MindSync</title>
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="logo">
+           <a href="../html/index.html"><img src="../imagens/img_index.html/fav-icon.png" alt="logoSite"></a>
+            <p>mind<strong>sync</strong></p>
+        </div>
+        <nav>
+            <ul>
+                <li class="hoverheader"><a href="#">Para colaboradores</a></li>
+                <li class="hoverheader"><a href="#">Para empresas</a></li>
+                <li class="hoverheader"><a href="#">Para médicos</a></li>
+                <li class="hoverheader"><a href="#">Blog</a></li>
+                <li><a href="../html/login.html" class="entra">Entrar</a></li>
+                <li><a href="#" class="cadastrar">Cadastre-se</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+<!-- FIM DO HEADER -->
