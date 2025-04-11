@@ -1,63 +1,59 @@
 /* HEADER - NO STTLE.CSS */
 /* BANNER 2 */
 .section-container-blog {
-    /* background-color: #72037A; */
     color: Black;
     padding: 30px 20px;
-    text-align: start;
+}
 
-}
 .section-title-blog {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 22px;
     text-align: center;
-    /* padding-left: 40px;    */
-   
+    color: gray;
 }
+
 .cards-container-blog {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .card-blog {
     background: white; 
     color: black;
-    /* padding: 20px; */
     border-radius: 10px;
     width: 20%;
     text-align: left;
     height: 340px;
-    /* position: relative; */
     flex: 0 0 300px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .card-blog h3 {
     font-size: 18px;
-    /* margin-bottom: 10px; */
     margin-top: 10px;
     padding: 20px;
     padding-top: 5px;
     text-align: center;
 }
+
 .card-blog p {
     font-size: 14px;
-    /* margin-bottom: 10px; */
     text-align: justify;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;   
 }
+
 .card-blog a {
     color: white;
     font-weight: bold;
     text-decoration: none;   
     display: inline-block;
     margin-top: 5px;
-    padding: 10px 16px;
+    padding: 10px 20px;
     font-size: 17px;
     font-weight: bold;
-    /* position: absolute; */
     bottom: 15px;
     left: 15px;
     text-align: center;
@@ -65,18 +61,11 @@
     border-radius: 14px;
 }
 
-.card-blog a :hover{
-    background-color: white;
-    color: #72037A;
-    border: solid 1px #72037A;
-}
-
-
 .categoria-blog {
     background: #ff9800;
     color: white;
-    padding: 3px 10px;
-    font-size: 12px;
+    padding: 5px 12px;
+    font-size: 14px;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
@@ -168,3 +157,12 @@
 
 }
 /* FINAL BANNER 2 */
+.app{
+    background-color:#72037A;
+    width: 100%;
+    margin: 30px;
+    height: 280px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+}
